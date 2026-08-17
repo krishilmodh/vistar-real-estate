@@ -1,0 +1,37 @@
+project_id = "kdzcoznmznkxpntnchfj"
+
+[auth]
+enabled = true
+email_confirm = false
+phone_confirm = false
+secure_email_change = true
+min_password_length = 8
+
+[auth.providers.email]
+enabled = true
+
+[auth.providers.phone]
+enabled = false
+
+[auth.rate_limit]
+signup = 30
+email = 30
+sms = 10
+token_refresh = 60
+
+[db]
+major_version = 15
+
+[edge_runtime]
+enabled = true
+
+[functions]
+max_duration = 60
+verify_jwt = true
+
+[storage]
+enabled = false
+
+[api]
+max_rows = 1000
+extra_search_path = ["public"]
